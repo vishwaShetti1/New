@@ -1,0 +1,40 @@
+============================================================
+PART 1 - WEB SCRAPING OUTPUT
+============================================================
+
+Scraping Page 1...
+Scraping Page 2...
+Scraping Page 3...
+Scraping Page 4...
+Scraping Page 5...
+
+============================================================
+SCRAPING COMPLETED
+============================================================
+
+Total Books Scraped : 100
+
+Columns
+
+Index(['title', 'price', 'star_rating', 'availability', 'category'], dtype='object')
+
+First Five Records
+
+0  A Light in the Attic                      £51.77    Three   In stock   Poetry
+1  Tipping the Velvet                       £53.74    One     In stock   Historical Fiction
+2  Soumission                               £50.10    One     In stock   Fiction
+3  Sharp Objects                            £47.82    Four    In stock   Mystery
+4  Sapiens: A Brief History of Humankind    £54.23    Five    In stock   History
+
+Raw dataset saved as raw_books.csv
+
+============================================================
+PART 1 COMPLETED SUCCESSFULLY
+============================================================
+
+Files Generated:
+✓ raw_books.csv
+
+Books Scraped : 100
+Pages Scraped : 5
+Website : https://books.toscrape.com/
