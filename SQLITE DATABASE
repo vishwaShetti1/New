@@ -1,0 +1,101 @@
+============================================================
+PART 3 - SQLITE DATABASE CREATION
+============================================================
+
+============================================================
+CREATING SQLITE DATABASE
+============================================================
+
+Database Connected Successfully
+
+Categories Table Created
+
+Books Table Created
+
+------------------------------------------------------------
+Extracting Categories...
+------------------------------------------------------------
+
+Categories Inserted Successfully
+
+Categories Table
+
+Total Categories : 29
+
+------------------------------------------------------------
+Merging Category IDs...
+------------------------------------------------------------
+
+Merge Completed Successfully
+
+Missing Category IDs : 0
+
+------------------------------------------------------------
+Sample Records Before Insertion
+------------------------------------------------------------
+
+Title                                Price_GBP   Price_INR   Rating   In_Stock
+--------------------------------------------------------------------------------
+A Light in the Attic                   51.77      5461.74        3        True
+Tipping the Velvet                     53.74      5669.57        1        True
+Soumission                             50.10      5285.55        1        True
+Sharp Objects                          47.82      5045.01        4        True
+Sapiens: A Brief History of Humankind  54.23      5721.26        5        True
+
+------------------------------------------------------------
+Inserting Books...
+------------------------------------------------------------
+
+Books Inserted Successfully
+
+------------------------------------------------------------
+First 10 Books
+------------------------------------------------------------
+
+Records Displayed Successfully
+
+------------------------------------------------------------
+Total Books Stored
+------------------------------------------------------------
+
+100
+
+------------------------------------------------------------
+Total Categories
+------------------------------------------------------------
+
+29
+
+------------------------------------------------------------
+Database Tables
+------------------------------------------------------------
+
+categories
+
+sqlite_sequence
+
+books
+
+============================================================
+DATABASE CREATED SUCCESSFULLY
+============================================================
+
+Database Name : books.db
+
+Tables Created :
+- categories
+- books
+
+Primary Keys :
+- category_id
+- book_id
+
+Foreign Key :
+books.category_id -> categories.category_id
+
+Database Status :
+Ready for SQL Queries
+
+============================================================
+END OF PART 3
+============================================================
