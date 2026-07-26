@@ -1,0 +1,103 @@
+======================================================================
+PART 5 - PANDAS SQL & MERGE COMPARISON
+======================================================================
+
+Reading Books Table...
+
+Books Table Loaded Successfully
+
+Total Books : 100
+
+----------------------------------------------------------------------
+
+Reading Categories Table...
+
+Categories Table Loaded Successfully
+
+Total Categories : 29
+
+----------------------------------------------------------------------
+
+Executing SQL JOIN...
+
+SQL JOIN Completed Successfully
+
+----------------------------------------------------------------------
+
+Performing Pandas Merge...
+
+Pandas Merge Completed Successfully
+
+----------------------------------------------------------------------
+
+Comparing SQL JOIN with Pandas Merge...
+
+Are Both Outputs Equal?
+
+True
+
+======================================================================
+SQL JOIN OUTPUT
+======================================================================
+
+Records Displayed Successfully
+
+Columns Returned
+
+- title
+- category_name
+- rating
+- price_gbp
+- price_inr
+- in_stock
+
+Total Records : 100
+
+======================================================================
+PANDAS MERGE OUTPUT
+======================================================================
+
+Records Displayed Successfully
+
+Columns Returned
+
+- title
+- category_name
+- rating
+- price_gbp
+- price_inr
+- in_stock
+
+Total Records : 100
+
+======================================================================
+OUTPUT COMPARISON
+======================================================================
+
+✓ SQL JOIN Result Matches Pandas Merge Result
+
+Comparison Status : PASSED
+
+Both methods produced identical outputs.
+
+======================================================================
+SUMMARY
+======================================================================
+
+Books Table Loaded Successfully
+
+Categories Table Loaded Successfully
+
+SQL JOIN Executed Successfully
+
+Pandas Merge Executed Successfully
+
+Output Comparison : TRUE
+
+Total Books Compared : 100
+
+Total Categories : 29
+
+======================================================================
+PART 5 COMPLETED SUCCESSFULLY
+======================================================================
