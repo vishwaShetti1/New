@@ -1,0 +1,188 @@
+# Book ETL Data Pipeline
+
+## Overview
+
+This project implements an end-to-end **ETL (Extract, Transform, Load)** pipeline using Python.
+It extracts book information from the **Books to Scrape** website, cleans and transforms the data, 
+stores it in a SQLite database, performs SQL queries, and validates SQL JOIN results using Pandas Merge.
+
+---
+
+## Project Workflow
+
+```
+Extract Data
+      ↓
+Transform Data
+      ↓
+Load into SQLite
+      ↓
+Execute SQL Queries
+      ↓
+Compare SQL JOIN and Pandas Merge
+```
+
+---
+
+## Technologies Used
+
+- Python
+- Google Colab
+- Requests
+- BeautifulSoup
+- Pandas
+- SQLite3
+
+---
+
+## Data Source
+
+Website: https://books.toscrape.com
+
+---
+
+## Project Statistics
+
+| Item | Value |
+|------|------:|
+| Books Scraped | 100 |
+| Categories | 29 |
+| Database Tables | 2 |
+| SQL Queries | 6 |
+
+---
+
+## Repository Structure
+
+```
+Book-ETL-Pipeline/
+│
+├── data_pipeline.ipynb
+├── SCRAPE BOOK DATA
+├── DATA CLEANING AND TRANSFORMATION
+├── SQLITE DATABASE
+├── SQL QUERIES
+├── PANDAS SQL & MERGE COMPARISON
+└── README.md
+```
+
+---
+
+## Part 1 – Data Extraction
+
+Book information was collected from the first five pages of the website.
+
+The following fields were extracted:
+
+- Title
+- Price
+- Star Rating
+- Availability
+- Category
+
+---
+
+## Part 2 – Data Cleaning and Transformation
+
+The extracted dataset was cleaned and transformed by performing the following operations:
+
+- Removed currency symbols and unwanted characters
+- Converted prices to numeric values
+- Converted ratings from text to integer values
+- Converted availability to Boolean values
+- Converted prices from GBP to INR
+- Handled missing values
+
+Exchange Rate Used:
+
+```
+1 GBP = 105.50 INR
+```
+
+---
+
+## Part 3 – SQLite Database
+
+A normalized SQLite database was created with two related tables.
+
+### Categories Table
+
+- category_id
+- category_name
+
+### Books Table
+
+- book_id
+- title
+- price_gbp
+- price_inr
+- rating
+- in_stock
+- category_id
+
+The `category_id` field in the **Books** table references the **Categories** table.
+
+---
+
+## Part 4 – SQL Queries
+
+The following SQL operations were executed:
+
+- SELECT
+- WHERE
+- ORDER BY
+- LIMIT
+- DISTINCT
+- BETWEEN
+- INNER JOIN
+- GROUP BY
+
+The query results were verified successfully.
+
+---
+
+## Part 5 – SQL and Pandas Comparison
+
+The SQL JOIN result was compared with the Pandas Merge result.
+
+Comparison Result:
+
+```
+True
+```
+
+This confirms that both approaches produced identical outputs.
+
+---
+
+## Results
+
+- Successfully scraped 100 books.
+- Cleaned and transformed the dataset.
+- Stored data in a normalized SQLite database.
+- Executed SQL queries successfully.
+- Verified SQL JOIN results using Pandas Merge.
+
+---
+
+## How to Run
+
+1. Open `data_pipeline.ipynb`.
+2. Run all notebook cells from top to bottom.
+
+Execution Order:
+
+```
+Part 1 → Data Extraction
+Part 2 → Data Cleaning
+Part 3 → SQLite Database
+Part 4 → SQL Queries
+Part 5 → SQL and Pandas Comparison
+```
+
+---
+
+## Conclusion
+
+This project demonstrates a complete ETL workflow using Python. It includes web scraping, data preprocessing, relational database creation,
+SQL query execution, and validation of results using Pandas. The implementation provides a simple and structured example of an end-to-end data pipeline.
