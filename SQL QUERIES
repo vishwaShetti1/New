@@ -1,0 +1,114 @@
+======================================================================
+PART 4 - SQL QUERIES
+======================================================================
+
+======================================================================
+EXECUTING SQL QUERIES
+======================================================================
+
+QUERY 1 : SELECT + WHERE
+
+Description:
+Display all books with a rating of 5.
+
+Output:
+19 Records Retrieved Successfully.
+
+---------------------------------------------------------------------
+
+QUERY 2 : ORDER BY + LIMIT
+
+Description:
+Display the Top 10 most expensive books ordered by price.
+
+Output:
+10 Records Retrieved Successfully.
+
+Highest Book Price : £58.11
+
+---------------------------------------------------------------------
+
+QUERY 3 : DISTINCT
+
+Description:
+Display all unique ratings.
+
+Output:
+
+1
+2
+3
+4
+5
+
+---------------------------------------------------------------------
+
+QUERY 4 : BETWEEN
+
+Description:
+Display books with price between £20 and £40.
+
+Output:
+34 Records Retrieved Successfully.
+
+---------------------------------------------------------------------
+
+QUERY 5 : INNER JOIN
+
+Description:
+Display books with their category, rating and price using INNER JOIN.
+
+Output:
+100 Records Retrieved Successfully.
+
+---------------------------------------------------------------------
+
+QUERY 6 : GROUP BY
+
+Description:
+Display total books and average price for each category.
+
+Output:
+29 Categories Retrieved Successfully.
+
+Highest Number of Books:
+Sequential Art - 14 Books
+
+======================================================================
+OUTPUT FILE
+======================================================================
+
+Query results saved as
+
+sql_query_outputs.txt
+
+======================================================================
+ALL SQL QUERIES EXECUTED SUCCESSFULLY
+======================================================================
+
+Queries Covered
+
+✓ SELECT
+✓ WHERE
+✓ ORDER BY
+✓ LIMIT
+✓ DISTINCT
+✓ BETWEEN
+✓ INNER JOIN
+✓ GROUP BY
+
+Output File Created
+
+sql_query_outputs.txt
+
+Database Used
+
+books.db
+
+Total Books in Database : 100
+
+Total Categories : 29
+
+======================================================================
+END OF PART 4
+======================================================================
