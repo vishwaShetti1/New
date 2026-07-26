@@ -1,0 +1,125 @@
+============================================================
+PART 2 - DATA CLEANING AND TRANSFORMATION
+============================================================
+
+============================================================
+DATASET INFORMATION BEFORE CLEANING
+============================================================
+
+Dataset Shape
+(100, 9)
+
+Column Names
+
+['title',
+ 'category',
+ 'price',
+ 'price_gbp',
+ 'price_inr',
+ 'star_rating',
+ 'rating',
+ 'availability',
+ 'in_stock']
+
+------------------------------------------------------------
+
+Missing Values Before Cleaning
+
+title            0
+category         0
+price            0
+price_gbp        0
+price_inr        0
+star_rating      0
+rating           0
+availability     0
+in_stock         0
+
+------------------------------------------------------------
+Cleaning Operations Performed
+------------------------------------------------------------
+
+✓ Removed currency symbol (£)
+✓ Converted price into float
+✓ Converted GBP to INR
+✓ Converted star ratings to integers
+✓ Converted availability into Boolean values
+✓ Verified missing values
+✓ Saved cleaned dataset
+
+============================================================
+DATA TYPES
+============================================================
+
+title            object
+category         object
+price            object
+price_gbp        float64
+price_inr        float64
+star_rating      object
+rating           int64
+availability     object
+in_stock         bool
+
+============================================================
+MISSING VALUES AFTER CLEANING
+============================================================
+
+title            0
+category         0
+price            0
+price_gbp        0
+price_inr        0
+star_rating      0
+rating           0
+availability     0
+in_stock         0
+
+============================================================
+FIRST FIVE CLEANED RECORDS
+============================================================
+
+Title                               Category                 GBP      INR       Rating    In Stock
+-----------------------------------------------------------------------------------------------
+A Light in the Attic                Poetry                   51.77    5461.74      3        True
+Tipping the Velvet                  Historical Fiction       53.74    5669.57      1        True
+Soumission                          Fiction                  50.10    5285.55      1        True
+Sharp Objects                       Mystery                  47.82    5045.01      4        True
+Sapiens: A Brief History of Humankind History                54.23    5721.26      5        True
+
+------------------------------------------------------------
+
+Output File Created
+
+clean_books.csv
+
+============================================================
+DATA CLEANING COMPLETED SUCCESSFULLY
+============================================================
+
+Total Books Processed : 100
+
+Columns Available
+
+title
+category
+price
+price_gbp
+price_inr
+star_rating
+rating
+availability
+in_stock
+
+Transformation Summary
+
+✓ Price cleaned successfully
+✓ GBP converted to INR
+✓ Ratings converted to integers
+✓ Availability converted to Boolean
+✓ Missing values handled
+✓ Clean dataset exported successfully
+
+============================================================
+END OF PART 2
+============================================================
